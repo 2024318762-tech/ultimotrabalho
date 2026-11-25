@@ -12,6 +12,29 @@
 
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+
+    <!-- EFEITO AO PASSAR O MOUSE NAS IMAGENS -->
+    <style>
+        .img-efeito {
+            transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+            cursor: pointer;
+        }
+
+        .img-efeito:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(120, 66, 88, 0.25);
+            filter: brightness(1.06);
+        }
+
+        #carrosselFlorah .carousel-item img {
+            transition: transform 0.6s ease, filter 0.6s ease;
+        }
+
+        #carrosselFlorah:hover .carousel-item.active img {
+            transform: scale(1.02);
+            filter: brightness(1.04);
+        }
+    </style>
 </head>
 
 <body style="background-color: #fffafc; font-family: 'Poppins', sans-serif; color: #593746;">
@@ -136,7 +159,7 @@
                 <!-- FOTO 1 -->
                 <div class="col-12 col-md-6">
                     <div class="text-center">
-                        <img src="../img/buque%20vermelho.jpg" alt="Buquê de rosas vermelhas" class="img-fluid w-100" style="height: 320px; object-fit: cover; border-radius: 12px;">
+                        <img src="../img/buque%20vermelho.jpg" alt="Buquê de rosas vermelhas" class="img-fluid w-100 img-efeito" style="height: 320px; object-fit: cover; border-radius: 12px;">
                         <h5 class="mt-3 fw-semibold" style="color: #784258;">Rosas Vermelhas</h5>
                         <p style="font-size: 14px; color: #765d68;">Elegância e romantismo em cada detalhe.</p>
                     </div>
@@ -145,7 +168,7 @@
                 <!-- FOTO 2 -->
                 <div class="col-12 col-md-6">
                     <div class="text-center">
-                        <img src="../img/buque%204%20girassois.jpg" alt="Buquê de girassóis" class="img-fluid w-100" style="height: 320px; object-fit: cover; border-radius: 12px;">
+                        <img src="../img/buque%204%20girassois.jpg" alt="Buquê de girassóis" class="img-fluid w-100 img-efeito" style="height: 320px; object-fit: cover; border-radius: 12px;">
                         <h5 class="mt-3 fw-semibold" style="color: #784258;">Girassóis</h5>
                         <p style="font-size: 14px; color: #765d68;">Alegria e luminosidade para qualquer ocasião.</p>
                     </div>
@@ -154,7 +177,7 @@
                 <!-- FOTO 3 -->
                 <div class="col-12 col-md-6">
                     <div class="text-center">
-                        <img src="../img/rosas%20coloridas.jpg" alt="Buquê de rosas coloridas" class="img-fluid w-100" style="height: 320px; object-fit: cover; border-radius: 12px;">
+                        <img src="../img/rosas%20coloridas.jpg" alt="Buquê de rosas coloridas" class="img-fluid w-100 img-efeito" style="height: 320px; object-fit: cover; border-radius: 12px;">
                         <h5 class="mt-3 fw-semibold" style="color: #784258;">Rosas Coloridas</h5>
                         <p style="font-size: 14px; color: #765d68;">Uma combinação de cores e delicadeza.</p>
                     </div>
@@ -163,7 +186,7 @@
                 <!-- FOTO 4 -->
                 <div class="col-12 col-md-6">
                     <div class="text-center">
-                        <img src="../img/box%20de%20flores.jpg" alt="Box especial de flores" class="img-fluid w-100" style="height: 320px; object-fit: cover; border-radius: 12px;">
+                        <img src="../img/box%20de%20flores.jpg" alt="Box especial de flores" class="img-fluid w-100 img-efeito" style="height: 320px; object-fit: cover; border-radius: 12px;">
                         <h5 class="mt-3 fw-semibold" style="color: #784258;">Box de Flores</h5>
                         <p style="font-size: 14px; color: #765d68;">Um presente especial para surpreender.</p>
                     </div>
